@@ -38,7 +38,7 @@
             font-size: 18px;
         }
         
-        #tableTitle {
+        .tableTitle {
             font-weight: bolder;
             font-size: 18px;
             color: purple;
@@ -49,17 +49,14 @@
         document.write('<h1>MIS快餐價格點餐表');
 
         var i, j, k;
-        document.write('<h1><table><tr><td></td>');
+        document.write('<h1><table><tbody><tr><td></td>');
         for (i = 5; i > 0; i--) {
-            document.write('<td id="tableTitle">' + i);
+            document.write('<td class="tableTitle">' + i);
         }
     </script>
 </head>
 
 <body>
-
-
-    </table>
 </body>
 
 </html>
