@@ -48,12 +48,25 @@
     <script>
         document.write('<h1>MIS快餐價格點餐表');
 
-        var i, j, k;
+        var i, j, k, a;
         j = 8;
         document.write('<h1><table><tbody><tr><td></td>');
         for (i = 5; i > 0; i--) {
             document.write('<td class="tableTitle">' + i + "號餐" + j + "元");
             j = j + 3;
+        }
+
+        for (i = 3; i <= 7; i++) {
+            document.write('<tr>');
+            document.write('<td class="tableTitle">' + i + '</td>');
+
+            for (a = 1; a <= 5; a++) {
+                k = 8;
+                document.write('<td class="content">');
+                document.write(i + '*' + k + '=' + i * k);
+                document.write('</td>');
+                k = k + 3;
+            }
         }
     </script>
 </head>
