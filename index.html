@@ -15,7 +15,9 @@
         }
         
         table {
+            border: 1px dashed gray;
             margin: auto;
+            empty-cells: hide;
         }
         
         #tableCaption {
@@ -49,7 +51,7 @@
         var i, j, k;
         document.write('<h1><table><tr><td></td>');
         for (i = 5; i > 0; i--) {
-            document.write('<td id="tableTitle">' + i號餐);
+            document.write('<td id="tableTitle">' + i);
         }
     </script>
 </head>
